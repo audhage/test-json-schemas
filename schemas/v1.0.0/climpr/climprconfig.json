@@ -10,15 +10,13 @@
     "$schema": {
       "type": "string",
       "format": "uri-reference",
-      "default": "#$id"
+      "default": "https://raw.githubusercontent.com/audhage/test-json-schemas/main/schemas/v1.0.0/climpr/climprconfig.json#"
     },
     "lzManagement": {
-      "$ref": "./lz-management/climprconfig.lzmanagement.json#",
-      "description": "All properties related to the landing zone management feature configuration."
+      "$ref": "./lz-management/climprconfig.lzmanagement.json#"
     },
     "policyManagement": {
-      "$ref": "./policy-management/climprconfig.policymanagement.json#",
-      "description": "All properties related to the policy management feature configuration."
+      "$ref": "./policy-management/climprconfig.policymanagement.json#"
     }
   }
 }
