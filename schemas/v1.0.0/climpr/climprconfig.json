@@ -9,6 +9,7 @@
   "properties": {
     "$schema": {
       "type": "string",
+      "format": "uri-reference",
       "default": "https://raw.githubusercontent.com/audhage/test-json-schemas/main/schemas/v1.0.0/climpr/climprconfig.json#"
     },
     "lzManagement": {
