@@ -9,7 +9,8 @@
   "properties": {
     "$schema": {
       "type": "string",
-      "format": "uri-reference"
+      "format": "uri-reference",
+      "default": "#$id"
     },
     "lzManagement": {
       "$ref": "./lz-management/climprconfig.lzmanagement.json#",
