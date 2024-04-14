@@ -1,5 +1,4 @@
 {
-  "$id": "https://raw.githubusercontent.com/audhage/test-json-schemas/main/schemas/v1.0.0/climpr/lz-management/metadata.json#",
   "$schema": "http://json-schema.org/draft-07/schema#",
   "type": "object",
   "required": [
