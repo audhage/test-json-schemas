@@ -5,7 +5,6 @@
   "type": "object",
   "required": [
     "enabled",
-    "contentPath",
     "defaultLocation",
     "rootManagementGroupId",
     "maxExemptionExpirationDateInDays",
@@ -18,11 +17,6 @@
       "type": "boolean",
       "description": "!!! NOT IN USE YET - Enables or disables the policyManagement features.",
       "default": false
-    },
-    "contentPath": {
-      "type": "string",
-      "description": "The path for the policy and policy set definition files.",
-      "default": "iac/policy"
     },
     "defaultLocation": {
       "type": "string",

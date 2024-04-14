@@ -15,6 +15,9 @@
     },
     "policyManagement": {
       "$ref": "./policy-management/climprconfig.policymanagement.json#"
+    },
+    "workloadManagement": {
+      "$ref": "./workload-management/climprconfig.workloadmanagement.json#"
     }
   }
 }
