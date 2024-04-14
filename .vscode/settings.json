@@ -39,17 +39,24 @@
     },
     {
       "fileMatch": [
-        "iac/lz-management/landing-zones/**/metadata.json",
-        "iac/lz-management/landing-zones/**/metadata.jsonc"
+        "**/landing-zones/**/metadata.json"
       ],
-      "url": "./json-schemas/schemas/metadata.schema.json"
+      "url": "https://raw.githubusercontent.com/audhage/test-json-schemas/main/schemas/v1.0.0/climpr/lz-management/metadata.json#",
+      "schema": {
+        "properties": {
+          "$schema": {
+            "enum": [
+              "https://raw.githubusercontent.com/audhage/test-json-schemas/main/schemas/v1.0.0/climpr/lz-management/metadata.json#"
+            ]
+          }
+        }
+      }
     },
     {
       "fileMatch": [
-        "iac/lz-management/landing-zones/**/*.existingVnetIds.json",
-        "iac/lz-management/landing-zones/**/*.existingVnetIds.jsonc"
+        "**/landing-zones/**/*.existingVnetIds.json"
       ],
-      "url": "./json-schemas/schemas/existingvnetids.schema.json"
+      "url": "https://raw.githubusercontent.com/audhage/test-json-schemas/main/schemas/v1.0.0/climpr/lz-management/existingvnetids.json#"
     }
   ]
 }
