@@ -19,38 +19,14 @@
   "powershell.codeFormatting.whitespaceInsideBrace": true,
   "files.associations": {
     "climprconfig.json": "jsonc",
-    "deploymentConfig.json": "jsonc",
-    "test1.json": "jsonc",
-    "test2.json": "jsonc"
+    "deploymentconfig.json": "jsonc"
   },
   "json.schemas": [
     {
       "fileMatch": [
-        "test2.json"
-      ],
-      "schema": {
-        "type": "object",
-        "required": [
-          "$schema"
-        ],
-        "unevaluatedProperties": false,
-        "properties": {
-          "$schema": {
-            "type": "string",
-            "format": "uri-reference",
-            "enum": [
-              "https://raw.githubusercontent.com/audhage/test-json-schemas/main/json-schemas/schemas/testfile.schema.json#",
-              "./json-schemas/schemas/testfile2.schema.json"
-            ]
-          }
-        }
-      }
-    },
-    {
-      "fileMatch": [
         "climprconfig.json"
       ],
-      "url": "./json-schemas/schemas/climprconfig.schema.json"
+      "url": "https://raw.githubusercontent.com/audhage/test-json-schemas/main/schemas/v1.0.0/climpr/climprconfig.json#"
     },
     {
       "fileMatch": [
