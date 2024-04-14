@@ -1,0 +1,107 @@
+{
+  "$id": "https://raw.githubusercontent.com/audhage/test-json-schemas/main/schemas/v1.0.0/climpr/lz-management/metadata.json#",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": [
+    "$schema",
+    "organization",
+    "repoName"
+  ],
+  "unevaluatedProperties": false,
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "format": "uri-reference"
+    },
+    "disableWorkloadRepoTemplateSync": {
+      "type": "boolean",
+      "default": false
+    },
+    "organization": {
+      "type": "string"
+    },
+    "repoName": {
+      "type": "string"
+    },
+    "repoDescription": {
+      "type": "string"
+    },
+    "repoTemplate": {
+      "type": "string"
+    },
+    "access": {
+      "$ref": "github-api.schema.json#/$defs/access"
+    },
+    "environments": {
+      "type": "array",
+      "unevaluatedProperties": false,
+      "items": {
+        "type": "object",
+        "required": [
+          "name"
+        ],
+        "unevaluatedProperties": false,
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "branchPolicyPatterns": {
+            "$ref": "github-api.schema.json#/$defs/branchPolicyPatterns"
+          },
+          "branchProtection": {
+            "$ref": "github-api.schema.json#/$defs/branchProtection"
+          },
+          "codeOwners": {
+            "$ref": "github-api.schema.json#/$defs/codeOwners"
+          },
+          "runProtection": {
+            "$ref": "github-api.schema.json#/$defs/runProtection"
+          },
+          "azure": {
+            "type": "object",
+            "required": [
+              "archetype"
+            ],
+            "unevaluatedProperties": false,
+            "properties": {
+              "archetype": {
+                "type": "string"
+              }
+            },
+            "if": {
+              "properties": {
+                "archetype": {
+                  "not": {
+                    "const": "no-lz"
+                  }
+                }
+              }
+            },
+            "then": {
+              "required": [
+                "subscriptionName",
+                "parentManagementGroupId",
+                "billingProfileDisplayName",
+                "invoiceSectionDisplayName"
+              ],
+              "properties": {
+                "subscriptionName": {
+                  "type": "string"
+                },
+                "parentManagementGroupId": {
+                  "type": "string"
+                },
+                "billingProfileDisplayName": {
+                  "type": "string"
+                },
+                "invoiceSectionDisplayName": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

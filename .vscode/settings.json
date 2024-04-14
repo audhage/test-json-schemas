@@ -1,0 +1,70 @@
+{
+  "editor.formatOnSaveMode": "modifications",
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "powershell.codeFormatting.addWhitespaceAroundPipe": true,
+  "powershell.codeFormatting.alignPropertyValuePairs": true,
+  "powershell.codeFormatting.autoCorrectAliases": false,
+  "powershell.codeFormatting.ignoreOneLineBlock": false,
+  "powershell.codeFormatting.newLineAfterCloseBrace": true,
+  "powershell.codeFormatting.newLineAfterOpenBrace": true,
+  "powershell.codeFormatting.openBraceOnSameLine": true,
+  "powershell.codeFormatting.trimWhitespaceAroundPipe": true,
+  "powershell.codeFormatting.useCorrectCasing": true,
+  "powershell.codeFormatting.whitespaceAfterSeparator": true,
+  "powershell.codeFormatting.whitespaceAroundOperator": true,
+  "powershell.codeFormatting.whitespaceBeforeOpenBrace": true,
+  "powershell.codeFormatting.whitespaceBeforeOpenParen": true,
+  "powershell.codeFormatting.whitespaceBetweenParameters": false,
+  "powershell.codeFormatting.whitespaceInsideBrace": true,
+  "files.associations": {
+    "climprconfig.json": "jsonc",
+    "deploymentConfig.json": "jsonc",
+    "test1.json": "jsonc",
+    "test2.json": "jsonc"
+  },
+  "json.schemas": [
+    {
+      "fileMatch": [
+        "test2.json"
+      ],
+      "schema": {
+        "type": "object",
+        "required": [
+          "$schema"
+        ],
+        "unevaluatedProperties": false,
+        "properties": {
+          "$schema": {
+            "type": "string",
+            "format": "uri-reference",
+            "enum": [
+              "https://raw.githubusercontent.com/audhage/test-json-schemas/main/json-schemas/schemas/testfile.schema.json#",
+              "./json-schemas/schemas/testfile2.schema.json"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "fileMatch": [
+        "climprconfig.json"
+      ],
+      "url": "./json-schemas/schemas/climprconfig.schema.json"
+    },
+    {
+      "fileMatch": [
+        "iac/lz-management/landing-zones/**/metadata.json",
+        "iac/lz-management/landing-zones/**/metadata.jsonc"
+      ],
+      "url": "./json-schemas/schemas/metadata.schema.json"
+    },
+    {
+      "fileMatch": [
+        "iac/lz-management/landing-zones/**/*.existingVnetIds.json",
+        "iac/lz-management/landing-zones/**/*.existingVnetIds.jsonc"
+      ],
+      "url": "./json-schemas/schemas/existingvnetids.schema.json"
+    }
+  ]
+}
