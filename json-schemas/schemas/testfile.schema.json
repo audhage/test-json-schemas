@@ -10,7 +10,7 @@
     "$schema": {
       "type": "string",
       "format": "uri-reference",
-      "pattern": "^https://github\\.com/audhage/test-json-schemas/blob/main/json-schemas\\schemas\\testfile\\.schema\\.json"
+      "pattern": "^https://raw\\.githubusercontent\\.com/audhage/test-json-schemas/main/json-schemas/schemas/testfile\\.schema\\.json#"
     },
     "name": {
       "type": "string"
