@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": [
+    "$schema",
+    "name"
+  ],
+  "unevaluatedProperties": false,
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "format": "uri-reference",
+      "pattern": "^https://github\\.com/audhage/test-json-schemas/blob/main/json-schemas\\schemas\\testfile\\.schema\\.json"
+    },
+    "name": {
+      "type": "string"
+    }
+  }
+}
