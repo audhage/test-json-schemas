@@ -30,7 +30,7 @@
       "type": "string"
     },
     "access": {
-      "$ref": "github-api.schema.json#/$defs/access"
+      "$ref": "github-api.json#/$defs/access"
     },
     "environments": {
       "type": "array",
@@ -46,16 +46,16 @@
             "type": "string"
           },
           "branchPolicyPatterns": {
-            "$ref": "github-api.schema.json#/$defs/branchPolicyPatterns"
+            "$ref": "github-api.json#/$defs/branchPolicyPatterns"
           },
           "branchProtection": {
-            "$ref": "github-api.schema.json#/$defs/branchProtection"
+            "$ref": "github-api.json#/$defs/branchProtection"
           },
           "codeOwners": {
-            "$ref": "github-api.schema.json#/$defs/codeOwners"
+            "$ref": "github-api.json#/$defs/codeOwners"
           },
           "runProtection": {
-            "$ref": "github-api.schema.json#/$defs/runProtection"
+            "$ref": "github-api.json#/$defs/runProtection"
           },
           "azure": {
             "type": "object",

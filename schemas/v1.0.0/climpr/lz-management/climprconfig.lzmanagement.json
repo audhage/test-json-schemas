@@ -69,19 +69,19 @@
           "description": "When this is enabled, a the default team is synced to Entra Id as a synced group."
         },
         "access": {
-          "$ref": "github-api.schema.json#/$defs/access"
+          "$ref": "github-api.json#/$defs/access"
         },
         "branchPolicyPatterns": {
-          "$ref": "github-api.schema.json#/$defs/branchPolicyPatterns"
+          "$ref": "github-api.json#/$defs/branchPolicyPatterns"
         },
         "branchProtection": {
-          "$ref": "github-api.schema.json#/$defs/branchProtection"
+          "$ref": "github-api.json#/$defs/branchProtection"
         },
         "codeOwners": {
-          "$ref": "github-api.schema.json#/$defs/codeOwners"
+          "$ref": "github-api.json#/$defs/codeOwners"
         },
         "runProtection": {
-          "$ref": "github-api.schema.json#/$defs/runProtection"
+          "$ref": "github-api.json#/$defs/runProtection"
         }
       }
     }
